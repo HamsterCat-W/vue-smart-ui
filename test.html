@@ -7,7 +7,16 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="./src/index.ts"></script>
+    <div id="test"></div>
+    <script>
+      let div = document.getElementById('test')
+      div.innerHTML = `
+        <button id="btn" onclick="test()">clock</button>
+        `
+
+      function test() {
+        console.log(111)
+      }
+    </script>
   </body>
 </html>

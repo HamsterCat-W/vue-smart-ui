@@ -1,4 +1,5 @@
 import { App } from 'vue'
+import 'uno.css'
 
 import SButton from './components/button.vue'
 
@@ -8,6 +9,6 @@ export { SButton }
 // 全部导入
 export default {
   install(app: App): void {
-    app.component(SButton.name, SButton)
+    app.component('SButton', SButton)
   },
 }
